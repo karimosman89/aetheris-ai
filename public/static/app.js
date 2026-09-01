@@ -97,6 +97,14 @@ const T = {
       form: { name: 'Nome e cognome', email: 'Email', org: 'Organizzazione', role: 'Ruolo', interest: 'Sono un/una…', message: 'Messaggio', submit: 'Invia richiesta', sending: 'Invio…',
         interests: ['Investitore / VC', 'Business Angel', 'Advisor', 'Design Partner (Energy)', 'Design Partner (Manufacturing)', 'Accelerator / Grant', 'Altro'] }
     },
+    dataroom: {
+      eyebrow: 'Investor Data Room', title: 'Accedi al package completo v3.0.', lead: 'Master Plan, Pitch Deck, One-Pager, Technical Dossier, PoC Specifications e Financial Model. Accesso riservato agli investitori.',
+      cta: 'Apri la Data Room', locked: 'Riservato', unlock: 'Sblocca', requestAccess: 'Richiedi accesso',
+      modalTitle: 'Data Room riservata', modalSub: 'Inserisci il codice di accesso per consultare i documenti confidenziali.',
+      passLabel: 'Codice di accesso', passPh: 'es. AETHERIS2026', enter: 'Entra', wrong: 'Codice non valido. Riprova o richiedi l\'accesso.',
+      noCode: 'Non hai un codice?', reqTitle: 'Richiedi l\'accesso', reqSub: 'Ti invieremo un codice entro 24h.', reqName: 'Nome', reqEmail: 'Email', reqOrg: 'Organizzazione', reqSend: 'Invia richiesta',
+      view: 'Apri', download: 'Scarica', pages: 'pagine', close: 'Chiudi', confidential: 'Confidenziale · © 2026 Aetheris AI S.r.l.'
+    },
     footer: { tagline: 'Applied AI Infrastructure for European Industry. AI Act–ready by design.', explore: 'Esplora', docs: 'Documenti', legal: 'Legale',
       links: { platform: 'Piattaforma', poc: 'Proof of Capability', roadmap: 'Roadmap', funding: 'Funding', masterplan: 'Master Plan v3.0', onepager: 'One-Pager', pitch: 'Pitch Deck', technical: 'Technical Dossier', privacy: 'Privacy', terms: 'Termini', confidential: 'Confidenzialità' },
       rights: '© 2026 Aetheris AI S.r.l. · Startup Innovativa ex D.L. 179/2012 · Toscana, Italia' }
@@ -195,13 +203,128 @@ const T = {
       form: { name: 'Full name', email: 'Email', org: 'Organization', role: 'Role', interest: 'I am a…', message: 'Message', submit: 'Send request', sending: 'Sending…',
         interests: ['Investor / VC', 'Business Angel', 'Advisor', 'Design Partner (Energy)', 'Design Partner (Manufacturing)', 'Accelerator / Grant', 'Other'] }
     },
+    dataroom: {
+      eyebrow: 'Investor Data Room', title: 'Access the full v3.0 package.', lead: 'Master Plan, Pitch Deck, One-Pager, Technical Dossier, PoC Specifications and Financial Model. Restricted to investors.',
+      cta: 'Open the Data Room', locked: 'Restricted', unlock: 'Unlock', requestAccess: 'Request access',
+      modalTitle: 'Confidential Data Room', modalSub: 'Enter the access code to view the confidential documents.',
+      passLabel: 'Access code', passPh: 'e.g. AETHERIS2026', enter: 'Enter', wrong: 'Invalid code. Try again or request access.',
+      noCode: 'No code yet?', reqTitle: 'Request access', reqSub: 'We\'ll send you a code within 24h.', reqName: 'Name', reqEmail: 'Email', reqOrg: 'Organization', reqSend: 'Send request',
+      view: 'Open', download: 'Download', pages: 'pages', close: 'Close', confidential: 'Confidential · © 2026 Aetheris AI S.r.l.'
+    },
     footer: { tagline: 'Applied AI Infrastructure for European Industry. AI Act–ready by design.', explore: 'Explore', docs: 'Documents', legal: 'Legal',
       links: { platform: 'Platform', poc: 'Proof of Capability', roadmap: 'Roadmap', funding: 'Funding', masterplan: 'Master Plan v3.0', onepager: 'One-Pager', pitch: 'Pitch Deck', technical: 'Technical Dossier', privacy: 'Privacy', terms: 'Terms', confidential: 'Confidentiality' },
       rights: '© 2026 Aetheris AI S.r.l. · Innovative Startup (D.L. 179/2012) · Tuscany, Italy' }
+  },
+  fr: {
+    nav: { platform: 'Plateforme', poc: 'Proof of Capability', market: 'Marché', moat: 'Avantage', roadmap: 'Roadmap', funding: 'Financement', contact: 'Contact', cta: 'Investir avec nous' },
+    hero: {
+      eyebrow: 'Applied AI Infrastructure · Europe',
+      h1a: 'L\'IA industrielle', h1b: 'européenne, pour de vrai.',
+      sub: 'La plateforme d\'Applied AI qui unifie GenAI, Computer Vision, IA prédictive et Agents pour l\'Énergie et l\'Industrie. AI Act–ready by design.',
+      cta1: 'Découvrir les 3 PoC', cta2: 'Master Plan v3.0',
+      b1: 'Startup Innovante · Toscane', b2: 'AI Act–ready (Règl. UE 2024/1689)', b3: 'Grounded & Proven'
+    },
+    layers: { title: 'AETHERIS OS', l1: 'Knowledge · RAG + Agents', l2: 'Vision · Détection de défauts', l3: 'Predict · Maintenance', l4: 'Compliance · Couche AI Act', l5: 'Edge · Jetson / ONNX' },
+    ticker: 'Stack de production vérifié',
+    stats: { title: 'Un track record de production — vérifiable', lead: 'Pas des promesses : des résultats déjà livrés en production par le fondateur en 5+ ans.',
+      s1: 'utilisateurs/jour servis', s2: 'uptime sur systèmes IA', s3: 'impact économique/an', s4: 'ans d\'IA en production' },
+    platform: { eyebrow: 'La solution', title: 'Une seule couche. Trois applications.', lead: 'Aetheris AI combine dans une architecture unique cloud-native + edge les technologies IA que l\'industrie européenne utilise vraiment — avec gouvernance et conformité intégrées.',
+      p1t: 'Aetheris Knowledge', p1d: 'RAG multimodal sur documents techniques, manuels et réglementations. Agents IA pour la recherche, la synthèse et la génération. Un copilote de connaissance pour les opérateurs terrain.', p1u: 'Copilote ingénierie · Document intelligence · Q&R technique', p1s: 'GenAI / RAG / Agents',
+      p2t: 'Aetheris Vision', p2d: 'Modèles pré-entraînés + fine-tuning rapide : détection d\'objets, classification de défauts, OCR, video analytics. Déploiement edge avec ONNX.', p2u: 'Inspection en ligne · Surveillance d\'actifs distants', p2s: 'Computer Vision',
+      p3t: 'Aetheris Predict', p3d: 'Prévision, détection d\'anomalies et maintenance prédictive. Intégration SCADA, IoT et capteurs pour l\'optimisation énergétique.', p3u: 'Maintenance prédictive · Optimisation énergétique', p3s: 'IA prédictive' },
+    aiact: { eyebrow: 'Réglementaire', title: 'AI Act–ready by design', lead: 'Nous ne revendiquons pas une conformité encore à certifier : nous concevons la plateforme pour supporter les exigences du Règlement (UE) 2024/1689 dès le premier jour.',
+      pillars: 'Gouvernance intégrée',
+      pv: [
+        ['fa-shield-halved', 'Gestion des risques', 'Model registry, data lineage automatique, audit trail complet'],
+        ['fa-file-lines', 'Documentation', 'DPIA et fiche technique par système IA ; explicabilité intégrée'],
+        ['fa-user-check', 'Supervision humaine', 'Patterns pour revue humaine, override et boucles de feedback'],
+        ['fa-lock', 'Sécurité & RGPD', 'Résidence des données UE, chiffrement, gestion des consentements']
+      ],
+      regs: [
+        ['AI Act', 'Règl. UE 2024/1689', 'Architecture by design ; roadmap de certification M18+'],
+        ['RGPD', 'Règl. UE 2016/679', 'Privacy by design, DPO désigné, DPIA par cas d\'usage'],
+        ['Data Act', 'Règl. UE 2023/2854', 'API standard pour portabilité et export'],
+        ['NIS2', 'Règl. UE 2022/2554', 'Réponse aux incidents, monitoring, notification'],
+        ['CRA', 'Règl. UE 2024/2847', 'SBOM automatique, gestion des vulnérabilités']
+      ]
+    },
+    poc: { eyebrow: 'Proof of Capability · 4 niveaux', title: '3 PoC publics. Du code, pas des slides.', lead: 'En 12-15 semaines, le fondateur publie 3 Proofs of Concept sur des datasets ouverts — avec GitHub, démo live, blog et white paper. Des preuves concrètes avant le marché.',
+      rows: [
+        ['M1–M4', 'PoC 1', 'Aetheris Knowledge · RAG', 'RAG hybride AI Act-ready sur 100+ documents industriels : ingestion multimodale, retrieval sémantique + BM25, re-ranking, agent ReAct, HITL avec file de revue.', ['BGE-M3', 'Qdrant', 'LangGraph', 'Mistral 7B', 'RAGAS']],
+        ['M5–M8', 'PoC 2', 'Aetheris Vision · Détection de défauts', 'Pipeline de vision industrielle end-to-end sur MVTec / NEU-DET : entraînement, benchmark vs baseline, export ONNX/TensorRT, déploiement edge sur Jetson.', ['YOLOv8', 'ONNX', 'TensorRT', 'FastAPI', 'Gradio']],
+        ['M9–M12', 'PoC 3', 'Aetheris Predict · Maintenance', 'Maintenance prédictive sur NASA C-MAPSS : 4 modèles comparés, détection d\'anomalies, dashboard de durée de vie résiduelle et alerting.', ['C-MAPSS', 'LSTM', 'XGBoost', 'Dashboard', 'MLOps']]
+      ],
+      deliver: ['Repo GitHub', 'Docker Compose', 'Démo live', 'Article de blog', 'White paper']
+    },
+    market: { eyebrow: 'Opportunité de marché', title: 'Un marché UE de plusieurs milliards, avec une approche bottom-up.', lead: 'Tailles réelles des segments adressables en Europe à 2030 — et un modèle de croissance conservateur, pas des promesses.',
+      segs: [
+        ['fa-bolt', 'IA en Énergie & Utilities', '28 Mds €', 'SAM 6 Mds €'],
+        ['fa-industry', 'IA en Industrie', '47 Mds €', 'SAM 10 Mds €'],
+        ['fa-file-magnifying-glass', 'Document Intelligence', '12 Mds €', 'SAM 3 Mds €'],
+        ['fa-eye', 'IA Vision industrielle', '18 Mds €', 'SAM 4 Mds €'],
+        ['fa-gauge-high', 'Maintenance prédictive', '14 Mds €', 'SAM 3 Mds €']
+      ],
+      totalL: 'Total adressable Aetheris (UE 2030)', totalV: 'TAM 119 Mds € · SAM 26 Mds €'
+    },
+    moat: { eyebrow: 'Avantage concurrentiel', title: 'Un moat à 5 niveaux qui grandit avec chaque client.', lead: 'L\'avantage n\'est pas une technologie unique, mais une structure qui se renforce à chaque PoC publié et chaque design partner.',
+      items: [
+        ['L1', 'Self-provable', '3 PoC publics (GitHub + démo + blog + white paper) — proof of capability visible par tous.'],
+        ['L2', 'Network-derivable', '2-4 advisors signés (AI Act + industrie) et une communauté technique qui crée confiance et intros.'],
+        ['L3', 'Customer-derivable', 'Accords de design partner avec données de domaine propriétaires et KPI de ROI mesurés.'],
+        ['L4', 'Moat de conformité', 'Architecture AI Act–ready : une barrière pour les concurrents US non natifs de la réglementation UE.'],
+        ['L5', 'Données + verticaux', 'Datasets industriels annotés pour l\'Énergie et l\'Industrie, non disponibles off-the-shelf.']
+      ]
+    },
+    roadmap: { eyebrow: 'Roadmap', title: '5 Gates mesurables. Financement milestone-based.', lead: 'Chaque Gate a des critères de sortie concrets. La tranche de capital suivante se débloque seulement au franchissement du Gate — alignant les incitations.',
+      gates: [
+        ['M3', 'Gate 1', 'Validation technique', ['PoC 1 (Knowledge) publié', 'GitHub + démo + white paper', '2 advisors signés']],
+        ['M6', 'Gate 2', 'Validation client', ['PoC 2 (Vision) publié', '30-50 entretiens', '1-2 design partners', '50-100k € de pipeline']],
+        ['M12', 'Gate 3', 'Product-market', ['PoC 3 (Predict) publié', '2-3 clients payants', '50-100k € ARR', 'Premier case study']],
+        ['M18', 'Gate 4', 'Répétabilité', ['5-6 clients payants', '250-400k € ARR', 'Sales playbook', 'Co-fondateur actif']],
+        ['M24', 'Gate 5', 'Scale', ['8-12 clients', '800k-1,2M € ARR', '1-2 clients UE', 'Candidature EIC']]
+      ]
+    },
+    fin: { eyebrow: 'Modèle Financier', title: 'Des chiffres conservateurs, cohérents au centime.', lead: 'Le modèle financier joint contient 385 formules live, 0 erreur. La croissance est délibérément prudente pour un fondateur solo qui construit l\'équipe.',
+      chartTitle: 'Revenus prévus (conservateur)',
+      table: [
+        ['Revenus', '80k €', '400k €', '1 150k €'],
+        ['Clients payants', '2', '5', '10'],
+        ['ACV', '40k €', '80k €', '115k €'],
+        ['Équipe (ETP moy.)', '0.8', '2.5', '4'],
+        ['Marge brute', '60%', '65%', '70%'],
+        ['EBITDA', '-200k €', '-50k €', '+200k €'],
+        ['Trésorerie fin d\'année', '200k €', '350k €', '1,3M €']
+      ],
+      cols: ['Métrique', 'Année 1', 'Année 2', 'Année 3'],
+      note: 'Cohérent avec le modèle financier Excel joint · 385 formules live · 0 erreur'
+    },
+    funding: { eyebrow: 'Stratégie de financement', title: '200-300k € Phase 1. Proportionné, pas 1,5M € upfront.', lead: 'Une structure milestone-based en 3 phases : lever le bon capital au bon moment, aligné sur les preuves d\'exécution.',
+      cards: [
+        ['Phase 1 · M0-M12', '200-300k €', 'Gate 1+2 : 3 PoC + design partners', ['Smart&Start Italia — 200k € taux zéro', 'IKIGAI / Polo Navacchio / Nana Bianca', 'Round pre-seed angel — 100k €'], true],
+        ['Phase 2 · M12-M24', '750k €', 'Après Gate 3 : 2-3 clients, 50-100k € ARR', ['Round seed VC spécialisés', 'Corporates stratégiques UE', 'Expansion Italie + 1 client UE'], false],
+        ['Phase 3 · M24+', '500k-2,5M €', 'Après Gate 4 : 250-400k € ARR', ['EIC Accelerator (grant + equity)', 'Série A lead', 'Premier bureau UE (DACH/Benelux)'], false]
+      ]
+    },
+    contact: { eyebrow: 'Parlons-en', title: 'Construisons ensemble l\'IA industrielle européenne.', lead: 'Investisseurs, business angels, advisors, design partners ou accélérateurs : si le parcours grounded & proven vous convainc, écrivez-nous.',
+      form: { name: 'Nom et prénom', email: 'Email', org: 'Organisation', role: 'Rôle', interest: 'Je suis un(e)…', message: 'Message', submit: 'Envoyer la demande', sending: 'Envoi…',
+        interests: ['Investisseur / VC', 'Business Angel', 'Advisor', 'Design Partner (Énergie)', 'Design Partner (Industrie)', 'Accélérateur / Grant', 'Autre'] }
+    },
+    dataroom: {
+      eyebrow: 'Investor Data Room', title: 'Accédez au package complet v3.0.', lead: 'Master Plan, Pitch Deck, One-Pager, Dossier Technique, Spécifications PoC et Modèle Financier. Accès réservé aux investisseurs.',
+      cta: 'Ouvrir la Data Room', locked: 'Réservé', unlock: 'Déverrouiller', requestAccess: 'Demander l\'accès',
+      modalTitle: 'Data Room confidentielle', modalSub: 'Saisissez le code d\'accès pour consulter les documents confidentiels.',
+      passLabel: 'Code d\'accès', passPh: 'ex. AETHERIS2026', enter: 'Entrer', wrong: 'Code invalide. Réessayez ou demandez l\'accès.',
+      noCode: 'Pas de code ?', reqTitle: 'Demander l\'accès', reqSub: 'Nous vous enverrons un code sous 24h.', reqName: 'Nom', reqEmail: 'Email', reqOrg: 'Organisation', reqSend: 'Envoyer la demande',
+      view: 'Ouvrir', download: 'Télécharger', pages: 'pages', close: 'Fermer', confidential: 'Confidentiel · © 2026 Aetheris AI S.r.l.'
+    },
+    footer: { tagline: 'Applied AI Infrastructure for European Industry. AI Act–ready by design.', explore: 'Explorer', docs: 'Documents', legal: 'Légal',
+      links: { platform: 'Plateforme', poc: 'Proof of Capability', roadmap: 'Roadmap', funding: 'Financement', masterplan: 'Master Plan v3.0', onepager: 'One-Pager', pitch: 'Pitch Deck', technical: 'Dossier Technique', privacy: 'Confidentialité', terms: 'Conditions', confidential: 'Confidentialité' },
+      rights: '© 2026 Aetheris AI S.r.l. · Startup Innovante (D.L. 179/2012) · Toscane, Italie' }
   }
 };
 
 let LANG = localStorage.getItem('aetheris_lang') || 'it';
+if (!['it','en','fr'].includes(LANG)) LANG = 'it';
 
 // ---- expose render entrypoint (defined in render.js appended below) ----
 window.__AETHERIS__ = { T, get lang(){return LANG;}, setLang(l){ LANG=l; localStorage.setItem('aetheris_lang', l); } };
@@ -228,16 +351,19 @@ function render() {
   root.appendChild(Roadmap(t));
   root.appendChild(Financials(t));
   root.appendChild(Funding(t));
+  root.appendChild(DataRoom(t));
   root.appendChild(Contact(t));
   root.appendChild(Footer(t));
   wireInteractions();
   observeReveal();
+  wire3DEffects();
 }
 
 /* ---- Navbar ---- */
 function Nav(t) {
   const n = el('nav', 'nav');
-  const other = LANG === 'it' ? 'EN' : 'IT';
+  const langs = ['it', 'en', 'fr'];
+  const pills = langs.map(l => `<span class="lang-pill ${l === LANG ? 'active' : ''}" data-lang="${l}">${l.toUpperCase()}</span>`).join('');
   n.innerHTML = `
     <div class="container nav-inner">
       <a href="#top" class="brand"><span class="brand-mark">Æ</span> Aetheris <span class="gradient-text">AI</span></a>
@@ -248,10 +374,11 @@ function Nav(t) {
         <a href="#moat">${t.nav.moat}</a>
         <a href="#roadmap">${t.nav.roadmap}</a>
         <a href="#funding">${t.nav.funding}</a>
+        <a href="#dataroom">${t.dataroom.eyebrow.replace('Investor ','')}</a>
       </div>
       <div class="nav-actions">
-        <button class="lang-toggle" id="langBtn"><b>${LANG.toUpperCase()}</b>/<span>${other}</span></button>
-        <a href="#contact" class="btn btn-primary" style="padding:11px 20px;font-size:14px;">${t.nav.cta}</a>
+        <div class="lang-toggle" id="langToggle">${pills}</div>
+        <a href="#contact" class="btn btn-primary magnetic" style="padding:11px 20px;font-size:14px;">${t.nav.cta}</a>
         <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
       </div>
     </div>`;
@@ -268,8 +395,8 @@ function Hero(t) {
         <h1>${t.hero.h1a}<br><span class="gradient-text">${t.hero.h1b}</span></h1>
         <p class="hero-sub">${t.hero.sub}</p>
         <div class="hero-cta">
-          <a href="#poc" class="btn btn-primary"><i class="fas fa-cube"></i> ${t.hero.cta1}</a>
-          <a href="#funding" class="btn btn-ghost"><i class="fas fa-file-lines"></i> ${t.hero.cta2}</a>
+          <a href="#poc" class="btn btn-primary magnetic"><i class="fas fa-cube"></i> ${t.hero.cta1}</a>
+          <a href="#dataroom" class="btn btn-ghost magnetic"><i class="fas fa-folder-open"></i> ${t.hero.cta2}</a>
         </div>
         <div class="hero-badges">
           <span class="chip"><i class="fas fa-map-marker-alt"></i> ${t.hero.b1}</span>
@@ -554,6 +681,31 @@ function Funding(t) {
   return s;
 }
 
+/* ---- Data Room ---- */
+function DataRoom(t) {
+  const s = el('section', 'section'); s.id = 'dataroom';
+  const d = t.dataroom;
+  s.innerHTML = `
+    <div class="container">
+      <div class="dataroom-panel reveal">
+        <div class="dataroom-lock"><i class="fas fa-shield-halved"></i></div>
+        <span class="eyebrow">${d.eyebrow}</span>
+        <h2 class="section-title">${d.title}</h2>
+        <p class="section-lead" style="margin:0 auto 30px">${d.lead}</p>
+        <div class="dataroom-docs-preview">
+          <span class="doc-chip"><i class="fas fa-file-pdf"></i> Master Plan</span>
+          <span class="doc-chip"><i class="fas fa-file-pdf"></i> Pitch Deck</span>
+          <span class="doc-chip"><i class="fas fa-file-pdf"></i> Technical Dossier</span>
+          <span class="doc-chip"><i class="fas fa-file-pdf"></i> PoC Specs</span>
+          <span class="doc-chip"><i class="fas fa-file-excel"></i> Financial Model</span>
+        </div>
+        <button class="btn btn-primary magnetic" id="openDataRoom"><i class="fas fa-unlock-keyhole"></i> ${d.cta}</button>
+        <div class="dataroom-note"><i class="fas fa-lock"></i> ${d.confidential}</div>
+      </div>
+    </div>`;
+  return s;
+}
+
 /* ---- Contact ---- */
 function Contact(t) {
   const s = el('section', 'section'); s.id = 'contact';
@@ -636,8 +788,14 @@ function Footer(t) {
    INTERACTIONS
    ========================================================================= */
 function wireInteractions() {
-  const langBtn = document.getElementById('langBtn');
-  if (langBtn) langBtn.onclick = () => { window.__AETHERIS__.setLang(LANG === 'it' ? 'en' : 'it'); LANG = window.__AETHERIS__.lang; render(); window.scrollTo({top:0}); };
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) langToggle.querySelectorAll('.lang-pill').forEach(p => {
+    p.onclick = () => {
+      const l = p.getAttribute('data-lang');
+      if (l === LANG) return;
+      window.__AETHERIS__.setLang(l); LANG = window.__AETHERIS__.lang; render();
+    };
+  });
 
   const menuBtn = document.getElementById('menuBtn');
   const navlinks = document.getElementById('navlinks');
@@ -663,6 +821,7 @@ function wireInteractions() {
       const btn = document.getElementById('submitBtn');
       const msg = document.getElementById('formMsg');
       const data = Object.fromEntries(new FormData(form).entries());
+      data.lang = LANG;
       const orig = btn.innerHTML;
       btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${T[LANG].contact.form.sending}`;
       btn.disabled = true;
@@ -679,10 +838,156 @@ function wireInteractions() {
     };
   }
 
+  // data room
+  const openBtn = document.getElementById('openDataRoom');
+  if (openBtn) openBtn.onclick = () => openDataRoom();
+
   // navbar scroll state
   const nav = document.querySelector('.nav');
   const onScroll = () => nav && nav.classList.toggle('scrolled', window.scrollY > 40);
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+}
+
+/* =========================================================================
+   DATA ROOM MODAL (passcode gate)
+   ========================================================================= */
+function openDataRoom() {
+  const d = T[LANG].dataroom;
+  const modal = document.getElementById('dataroom-modal');
+  modal.innerHTML = `
+    <div class="dr-overlay" id="drOverlay">
+      <div class="dr-box" role="dialog" aria-modal="true">
+        <button class="dr-close" id="drClose" aria-label="${d.close}"><i class="fas fa-xmark"></i></button>
+        <div id="drGate">
+          <div class="dr-lockicon"><i class="fas fa-shield-halved"></i></div>
+          <h3>${d.modalTitle}</h3>
+          <p class="dr-sub">${d.modalSub}</p>
+          <div class="dr-field">
+            <label>${d.passLabel}</label>
+            <input type="password" id="drPass" placeholder="${d.passPh}" autocomplete="off" />
+          </div>
+          <button class="btn btn-primary" id="drEnter" style="width:100%;justify-content:center"><i class="fas fa-unlock-keyhole"></i> ${d.enter}</button>
+          <div class="dr-msg" id="drMsg"></div>
+          <div class="dr-divider"><span>${d.noCode}</span></div>
+          <button class="dr-req-toggle" id="drReqToggle"><i class="fas fa-envelope"></i> ${d.requestAccess}</button>
+          <form id="drReqForm" class="dr-req-form">
+            <div class="dr-field"><label>${d.reqName}</label><input name="name" required /></div>
+            <div class="dr-field"><label>${d.reqEmail}</label><input name="email" type="email" required /></div>
+            <div class="dr-field"><label>${d.reqOrg}</label><input name="org" /></div>
+            <button type="submit" class="btn btn-ghost" style="width:100%;justify-content:center"><i class="fas fa-paper-plane"></i> ${d.reqSend}</button>
+            <div class="dr-msg" id="drReqMsg"></div>
+          </form>
+        </div>
+        <div id="drDocs" class="dr-docs" style="display:none"></div>
+      </div>
+    </div>`;
+  requestAnimationFrame(() => document.getElementById('drOverlay').classList.add('show'));
+  document.body.style.overflow = 'hidden';
+
+  const close = () => { document.getElementById('drOverlay').classList.remove('show'); document.body.style.overflow=''; setTimeout(() => modal.innerHTML = '', 300); };
+  document.getElementById('drClose').onclick = close;
+  document.getElementById('drOverlay').onclick = (e) => { if (e.target.id === 'drOverlay') close(); };
+  document.addEventListener('keydown', function esc(e){ if(e.key==='Escape'){close(); document.removeEventListener('keydown',esc);} });
+
+  const pass = document.getElementById('drPass');
+  const enter = document.getElementById('drEnter');
+  const doUnlock = async () => {
+    const msg = document.getElementById('drMsg');
+    enter.disabled = true; const o = enter.innerHTML; enter.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+    try {
+      const res = await fetch('/api/dataroom/unlock', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ passcode: pass.value }) });
+      const j = await res.json();
+      if (j.ok) { showDocs(j.documents); }
+      else { msg.className='dr-msg err'; msg.textContent = d.wrong; pass.classList.add('shake'); setTimeout(()=>pass.classList.remove('shake'),500); }
+    } catch(e){ msg.className='dr-msg err'; msg.textContent = 'Network error.'; }
+    enter.disabled = false; enter.innerHTML = o;
+  };
+  enter.onclick = doUnlock;
+  pass.onkeydown = (e) => { if (e.key === 'Enter') doUnlock(); };
+  setTimeout(()=>pass.focus(), 350);
+
+  // request access toggle
+  const reqToggle = document.getElementById('drReqToggle');
+  const reqForm = document.getElementById('drReqForm');
+  reqToggle.onclick = () => { reqForm.classList.toggle('open'); };
+  reqForm.onsubmit = async (e) => {
+    e.preventDefault();
+    const msg = document.getElementById('drReqMsg');
+    const data = Object.fromEntries(new FormData(reqForm).entries()); data.lang = LANG;
+    try {
+      const res = await fetch('/api/dataroom/request', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
+      const j = await res.json();
+      msg.className = 'dr-msg ' + (j.ok?'ok':'err'); msg.textContent = j.ok ? j.message : (j.error||'Error');
+      if (j.ok) reqForm.reset();
+    } catch(e){ msg.className='dr-msg err'; msg.textContent='Network error.'; }
+  };
+
+  function showDocs(docs) {
+    document.getElementById('drGate').style.display = 'none';
+    const wrap = document.getElementById('drDocs');
+    wrap.style.display = 'block';
+    const iconFor = (type) => type === 'XLSX' ? 'fa-file-excel' : 'fa-file-pdf';
+    const rows = docs.map(doc => `
+      <div class="dr-doc">
+        <div class="dr-doc-ic"><i class="fas ${iconFor(doc.type)}"></i></div>
+        <div class="dr-doc-meta">
+          <div class="dr-doc-title">${doc.title[LANG] || doc.title.en}</div>
+          <div class="dr-doc-sub">${doc.type} · ${doc.pages} ${d.pages} · ${doc.size}</div>
+        </div>
+        <div class="dr-doc-actions">
+          <a href="/docs/${doc.file}" target="_blank" rel="noopener" class="dr-btn"><i class="fas fa-eye"></i> ${d.view}</a>
+          <a href="/docs/${doc.file}" download class="dr-btn"><i class="fas fa-download"></i> ${d.download}</a>
+        </div>
+      </div>`).join('');
+    wrap.innerHTML = `
+      <div class="dr-unlocked-head"><i class="fas fa-lock-open"></i> <span>${d.eyebrow}</span></div>
+      ${rows}
+      <div class="dr-note-bottom">${d.confidential}</div>`;
+  }
+}
+
+/* =========================================================================
+   TRENDING 2026 MICRO-INTERACTIONS
+   magnetic buttons · 3D tilt cards · cursor glow
+   ========================================================================= */
+function wire3DEffects() {
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!fine) return;
+
+  // Magnetic buttons
+  document.querySelectorAll('.magnetic').forEach(btn => {
+    btn.addEventListener('pointermove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const mx = e.clientX - r.left - r.width / 2;
+      const my = e.clientY - r.top - r.height / 2;
+      btn.style.transform = `translate(${mx * 0.25}px, ${my * 0.35}px)`;
+    });
+    btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+  });
+
+  // 3D tilt on cards
+  document.querySelectorAll('.card, .fund-card, .market-card, .gate').forEach(card => {
+    card.classList.add('tilt3d');
+    card.addEventListener('pointermove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `perspective(900px) rotateY(${px * 7}deg) rotateX(${-py * 7}deg) translateY(-8px)`;
+      card.style.setProperty('--gx', `${(px + 0.5) * 100}%`);
+      card.style.setProperty('--gy', `${(py + 0.5) * 100}%`);
+    });
+    card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+  });
+}
+
+/* cursor glow — attached once globally */
+function initCursorGlow() {
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const glow = document.getElementById('cursor-glow');
+  if (!fine || !glow) return;
+  let x = window.innerWidth/2, y = window.innerHeight/2, tx = x, ty = y;
+  window.addEventListener('pointermove', (e) => { tx = e.clientX; ty = e.clientY; });
+  (function loop(){ x += (tx-x)*0.15; y += (ty-y)*0.15; glow.style.transform = `translate(${x}px, ${y}px)`; requestAnimationFrame(loop); })();
 }
 
 /* reveal on scroll + bar animation */
@@ -760,3 +1065,4 @@ function initCanvas() {
 /* boot */
 render();
 initCanvas();
+initCursorGlow();
