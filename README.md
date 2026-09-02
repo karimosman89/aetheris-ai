@@ -64,7 +64,7 @@ npx wrangler pages secret put HUBSPOT_TOKEN --project-name <project>
 1. Open the site — the 3D hero, animated background and orchestration card load immediately.
 2. Use the top-right **IT / EN / FR** pill toggle to switch language.
 3. Navigate via the sticky nav (Platform, Proof of Capability, Market, Moat, Roadmap, Funding, Data Room) or scroll.
-4. **Investor Data Room**: click "Open Data Room", enter the passcode (`AETHERIS2026` by default) to view/download the confidential documents, or use "Request access" if you don't have a code.
+4. **Investor Data Room**: click "Open Data Room" and enter the passcode configured in Vercel. If no production passcode is configured, the room remains locked and visitors can use "Request access" instead.
 5. Use the **Invest with us** button or the contact form to send an inquiry.
 
 ## Tech Stack

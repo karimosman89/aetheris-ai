@@ -120,7 +120,10 @@ app.post('/api/contact', async (c) => {
 app.post('/api/dataroom/unlock', async (c) => {
   const body = await c.req.json().catch(() => ({}))
   const { passcode } = body || {}
-  const expected = c.env?.DATAROOM_PASSCODE || 'AETHERIS2026'
+  const expected = c.env?.DATAROOM_PASSCODE
+  if (!expected) {
+    return c.json({ ok: false, error: 'data_room_not_configured' }, 503)
+  }
   if (passcode && String(passcode).trim() === expected) {
     return c.json({ ok: true, documents: DOCUMENTS })
   }
