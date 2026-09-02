@@ -68,20 +68,20 @@ npx wrangler pages secret put HUBSPOT_TOKEN --project-name <project>
 5. Use the **Invest with us** button or the contact form to send an inquiry.
 
 ## Tech Stack
-- **Backend**: Hono (Cloudflare Pages/Workers), TypeScript, JSX server-render.
+- **Backend**: Hono, TypeScript, JSX server-render, exposed as a Vercel Node.js serverless function.
 - **Frontend**: Vanilla JS single-file renderer, Three.js (CDN importmap), custom CSS design system, Google Fonts (Space Grotesk / Inter / JetBrains Mono), Font Awesome, HTML5 Canvas.
 - **Integrations**: Resend (email), HubSpot CRM.
-- **Build/Dev**: Vite + `@hono/vite-build`, custom `scripts/postbuild.mjs` (writes `_routes.json` to serve `/static/*` & `/docs/*` natively), Wrangler, PM2.
+- **Build/Dev**: Vite + `@hono/vite-build`, custom `scripts/postbuild.mjs`, Wrangler-compatible local preview, and Vercel routing via `vercel.json`.
 
 ## Deployment
-- **Platform**: Cloudflare Pages
-- **Status**: ✅ Active (local sandbox via PM2 + wrangler pages dev on port 3000)
-- **Local dev**: `npm run build && pm2 start ecosystem.config.cjs`
-- **Not yet deployed to production** (Cloudflare Pages) — awaiting user confirmation of deployment route.
-- **Last Updated**: 2026-09-01
+- **Platform**: Vercel
+- **Status**: ✅ Vercel-ready; the previous `NOT_FOUND` failure was caused by deploying a Cloudflare-only output without a Vercel function entrypoint.
+- **Local dev**: `npm run dev` or `npm run build`
+- **Production**: import the GitHub repository into Vercel, keep the root directory at `/`, and use the included `vercel.json` defaults. Add `RESEND_API_KEY`, `CONTACT_TO`, `DATAROOM_PASSCODE`, and `HUBSPOT_TOKEN` in Vercel Project Settings → Environment Variables as needed.
+- **Last Updated**: 2026-09-02
 
 ## Recommended Next Steps
-- Deploy to Cloudflare Pages (BYOK or Genspark-hosted) and set the four secrets above.
+- Connect the repository to Vercel and set the four secrets above for production lead capture and data-room requests.
 - Add a custom domain (e.g. aetheris.ai) and analytics.
 - Optionally migrate lead/data-room-request logging to Cloudflare D1 for an audit trail.
 - Add per-investor data-room passcodes / expiring links for finer access control.
