@@ -1,5 +1,7 @@
 {
-  "name": "webapp",
+  "name": "aetheris-ai",
+  "version": "3.2.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +11,7 @@
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
+    "@hono/node-server": "^1.19.17",
     "hono": "^4.13.5"
   },
   "devDependencies": {
