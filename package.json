@@ -3,21 +3,20 @@
   "version": "3.2.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && node scripts/postbuild.mjs",
-    "preview": "wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && tsx scripts/dev.mjs",
+    "start": "tsx scripts/dev.mjs",
+    "preview": "npm run build && tsx scripts/dev.mjs"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.17",
     "hono": "^4.13.5"
   },
   "devDependencies": {
-    "@hono/vite-build": "^1.11.1",
-    "@hono/vite-dev-server": "^0.26.1",
-    "vite": "^8.1.4",
-    "wrangler": "^4.110.0"
+    "tsx": "^4.19.2"
   }
 }
