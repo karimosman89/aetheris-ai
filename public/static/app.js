@@ -14,6 +14,15 @@ const T = {
     },
     layers: { title: 'AETHERIS OS', l1: 'Knowledge · RAG + Agents', l2: 'Vision · Defect Detection', l3: 'Predict · Maintenance', l4: 'Compliance · AI Act Layer', l5: 'Edge · Jetson / ONNX' },
     ticker: 'Stack di produzione verificato',
+    trust: { label: 'Ecosistema di riferimento — programmi e standard con cui ci allineiamo' },
+    whynow: { eyebrow: 'Perché ora', title: 'Il momento dell\'Applied AI europea è il 2026.', lead: 'Quattro forze convergono e aprono una finestra per una piattaforma AI industriale, sovrana e conforme by design.',
+      cards: [
+        ['fa-gavel', 'AI Act operativo', 'Gli obblighi per i sistemi ad alto rischio entrano in vigore nel 2026: la compliance diventa requisito d\'acquisto, non un optional.', 'Reg. UE 2024/1689'],
+        ['fa-robot', 'Agentic AI in produzione', 'Gli AI Agents passano dal demo al deploy: orchestrazione, tool-use e human-in-the-loop per workflow industriali reali.', '+45% adozione enterprise'],
+        ['fa-microchip', 'Edge & Sovereign AI', 'Inferenza on-prem/edge (Jetson, ONNX) e dati che restano in UE: latenza, costi e sovranità del dato come vantaggio.', 'Data residency EU'],
+        ['fa-industry', 'Re-industrializzazione EU', 'Energy e Manufacturing investono in automazione intelligente per resilienza e decarbonizzazione.', 'TAM € 119 Mld al 2030']
+      ]
+    },
     stats: { title: 'Track record di produzione — verificabile', lead: 'Non promesse: risultati già consegnati in produzione dal founder in 5+ anni.',
       s1: 'utenti/giorno serviti', s2: 'uptime su sistemi AI', s3: 'impatto economico/anno', s4: 'anni AI in produzione' },
     platform: { eyebrow: 'La soluzione', title: 'Un unico layer. Tre applicazioni.', lead: 'Aetheris AI combina in un\'unica architettura cloud-native + edge le tecnologie AI che l\'industria europea usa davvero — con governance e compliance integrate.',
@@ -120,6 +129,15 @@ const T = {
     },
     layers: { title: 'AETHERIS OS', l1: 'Knowledge · RAG + Agents', l2: 'Vision · Defect Detection', l3: 'Predict · Maintenance', l4: 'Compliance · AI Act Layer', l5: 'Edge · Jetson / ONNX' },
     ticker: 'Verified production stack',
+    trust: { label: 'Reference ecosystem — programs & standards we align with' },
+    whynow: { eyebrow: 'Why now', title: 'The moment for European Applied AI is 2026.', lead: 'Four forces converge to open a window for a sovereign, compliant-by-design industrial AI platform.',
+      cards: [
+        ['fa-gavel', 'AI Act goes live', 'High-risk system obligations take effect in 2026 — compliance becomes a purchasing requirement, not a nice-to-have.', 'EU Reg. 2024/1689'],
+        ['fa-robot', 'Agentic AI in production', 'AI Agents move from demo to deploy: orchestration, tool-use and human-in-the-loop for real industrial workflows.', '+45% enterprise adoption'],
+        ['fa-microchip', 'Edge & Sovereign AI', 'On-prem/edge inference (Jetson, ONNX) with data staying in the EU: latency, cost and data sovereignty as an edge.', 'EU data residency'],
+        ['fa-industry', 'EU re-industrialization', 'Energy & Manufacturing invest in intelligent automation for resilience and decarbonization.', '€119B TAM by 2030']
+      ]
+    },
     stats: { title: 'A production track record — verifiable', lead: 'Not promises: results already delivered in production by the founder over 5+ years.',
       s1: 'users/day served', s2: 'uptime on AI systems', s3: 'economic impact/year', s4: 'years of AI in production' },
     platform: { eyebrow: 'The solution', title: 'One layer. Three applications.', lead: 'Aetheris AI combines the AI technologies European industry actually uses into a single cloud-native + edge architecture — with governance and compliance built in.',
@@ -226,6 +244,15 @@ const T = {
     },
     layers: { title: 'AETHERIS OS', l1: 'Knowledge · RAG + Agents', l2: 'Vision · Détection de défauts', l3: 'Predict · Maintenance', l4: 'Compliance · Couche AI Act', l5: 'Edge · Jetson / ONNX' },
     ticker: 'Stack de production vérifié',
+    trust: { label: 'Écosystème de référence — programmes & normes avec lesquels nous nous alignons' },
+    whynow: { eyebrow: 'Pourquoi maintenant', title: 'Le moment de l\'IA appliquée européenne, c\'est 2026.', lead: 'Quatre forces convergent et ouvrent une fenêtre pour une plateforme d\'IA industrielle, souveraine et conforme by design.',
+      cards: [
+        ['fa-gavel', 'AI Act en vigueur', 'Les obligations pour les systèmes à haut risque s\'appliquent en 2026 : la conformité devient un critère d\'achat, pas une option.', 'Règl. UE 2024/1689'],
+        ['fa-robot', 'IA agentique en production', 'Les AI Agents passent de la démo au déploiement : orchestration, tool-use et human-in-the-loop pour des workflows industriels réels.', '+45% adoption entreprise'],
+        ['fa-microchip', 'Edge & Sovereign AI', 'Inférence on-prem/edge (Jetson, ONNX) et données restant dans l\'UE : latence, coûts et souveraineté comme avantage.', 'Data residency UE'],
+        ['fa-industry', 'Ré-industrialisation UE', 'L\'Énergie et l\'Industrie investissent dans l\'automatisation intelligente pour la résilience et la décarbonation.', 'TAM 119 Md€ d\'ici 2030']
+      ]
+    },
     stats: { title: 'Un track record de production — vérifiable', lead: 'Pas des promesses : des résultats déjà livrés en production par le fondateur en 5+ ans.',
       s1: 'utilisateurs/jour servis', s2: 'uptime sur systèmes IA', s3: 'impact économique/an', s4: 'ans d\'IA en production' },
     platform: { eyebrow: 'La solution', title: 'Une seule couche. Trois applications.', lead: 'Aetheris AI combine dans une architecture unique cloud-native + edge les technologies IA que l\'industrie européenne utilise vraiment — avec gouvernance et conformité intégrées.',
@@ -342,6 +369,8 @@ function render() {
   root.appendChild(Nav(t));
   root.appendChild(Hero(t));
   root.appendChild(Ticker(t));
+  root.appendChild(Trust(t));
+  root.appendChild(WhyNow(t));
   root.appendChild(Stats(t));
   root.appendChild(Platform(t));
   root.appendChild(AIAct(t));
@@ -368,6 +397,7 @@ function Nav(t) {
     <div class="container nav-inner">
       <a href="#top" class="brand"><span class="brand-mark">Æ</span> Aetheris <span class="gradient-text">AI</span></a>
       <div class="nav-links" id="navlinks">
+        <a href="#whynow">${t.whynow.eyebrow}</a>
         <a href="#platform">${t.nav.platform}</a>
         <a href="#poc">${t.nav.poc}</a>
         <a href="#market">${t.nav.market}</a>
@@ -431,6 +461,49 @@ function Ticker(t) {
   const row = items.map(i => `<span><i class="fas fa-circle-nodes"></i> ${i}</span>`).join('');
   s.innerHTML = `<div class="container"><div class="ticker-label">${t.ticker}</div></div>
     <div class="ticker">${row}${row}</div>`;
+  return s;
+}
+
+/* ---- Trust / reference ecosystem band ---- */
+function Trust(t) {
+  const s = el('section', 'trust-band');
+  const logos = [
+    ['fa-flag', 'EU AI Act'],
+    ['fa-rocket', 'Smart&Start'],
+    ['fa-award', 'EIC Accelerator'],
+    ['fa-shield-halved', 'GDPR'],
+    ['fa-building-columns', 'Startup Innovativa'],
+    ['fa-microchip', 'NVIDIA Inception'],
+  ];
+  const row = logos.map(l => `<span class="tlogo"><i class="fas ${l[0]}"></i>${l[1]}</span>`).join('');
+  s.innerHTML = `
+    <div class="container reveal">
+      <div class="trust-label">${t.trust.label}</div>
+      <div class="trust-logos">${row}</div>
+    </div>`;
+  return s;
+}
+
+/* ---- Why now (2026 trends) ---- */
+function WhyNow(t) {
+  const s = el('section', 'section'); s.id = 'whynow';
+  const w = t.whynow;
+  const cards = w.cards.map((c, i) => `
+    <div class="trend-card reveal d${(i % 4) + 1}">
+      <div class="t-ico"><i class="fas ${c[0]}"></i></div>
+      <h4>${c[1]}</h4>
+      <p>${c[2]}</p>
+      <div class="t-stat"><i class="fas fa-arrow-trend-up"></i> ${c[3]}</div>
+    </div>`).join('');
+  s.innerHTML = `
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">${w.eyebrow}</span>
+        <h2 class="section-title">${w.title}</h2>
+        <p class="section-lead">${w.lead}</p>
+      </div>
+      <div class="whynow-grid">${cards}</div>
+    </div>`;
   return s;
 }
 
